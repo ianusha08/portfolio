@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3" />
+  <link rel="icon" type="image/png" href="/favicon.png?v=3" />
+  <link rel="apple-touch-icon" href="/favicon.png?v=3" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anusha Singh — AI/ML • Software • Building</title>
+  <meta name="description"
+    content="Anusha Singh — AI/ML Engineer in training focused on building practical systems at the intersection of Artificial Intelligence and software engineering." />
+
+  <!-- Pre-render Theme Initialization to prevent Flash of Unstyled Theme -->
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('portfolio_theme') || 'dark';
+        document.documentElement.classList.remove('dark', 'light');
+        document.documentElement.classList.add(theme);
+        document.documentElement.style.colorScheme = theme;
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-dark-bg text-dark-text antialiased font-sans transition-colors duration-200">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

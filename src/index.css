@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+html.dark {
+  /* DARK THEME (Default Vengeance // Editorial Engineering) */
+  --bg: 9 9 11;                    /* #09090b */
+  --surface: 17 17 19;              /* #111113 */
+  --surface-hover: 24 24 27;        /* #18181b */
+  --surface-secondary: 24 24 27;    /* #18181b */
+  --border: 39 39 42;               /* #27272a */
+  --border-light: 63 63 70;         /* #3f3f46 */
+
+  --text-primary: 255 255 255;      /* Crisp pure white #ffffff */
+  --text-secondary: 161 161 170;    /* Light grey #a1a1aa */
+  --text-muted: 113 113 122;        /* Muted caption grey #71717a */
+
+  --accent-amber: 245 158 11;       /* #f59e0b */
+  --accent-emerald: 16 185 129;     /* #10b981 */
+  --accent-blue: 56 189 248;        /* #38bdf8 */
+  --accent-purple: 192 132 252;     /* #c084fc */
+
+  --grid-line: rgba(255, 255, 255, 0.04);
+  --banner-grad-start: #09090b;
+  --banner-grad-mid: #111115;
+  --banner-grad-end: #18181b;
+
+  --modal-backdrop: rgba(0, 0, 0, 0.75);
+  --selection-bg: rgba(245, 158, 11, 0.3);
+  --selection-text: #fbbf24;
+  --scrollbar-bg: #09090b;
+  --scrollbar-thumb: #27272a;
+  --scrollbar-hover: #3f3f46;
+}
+
+html.light {
+  /* LIGHT THEME (Vengeance Light // ashutoshx7.me exact contrast) */
+  --bg: 255 255 255;                /* Crisp clean white #ffffff */
+  --surface: 255 255 255;           /* Clean white card #ffffff */
+  --surface-hover: 244 244 245;     /* Light grey hover #f4f4f5 */
+  --surface-secondary: 244 244 245; /* Soft pill/box background #f4f4f5 */
+  --border: 228 228 231;            /* Hairline light grey border #e4e4e7 */
+  --border-light: 212 212 216;      /* Active border #d4d4d8 */
+
+  --text-primary: 9 9 11;           /* Deep crisp near-black #09090b */
+  --text-secondary: 63 63 70;       /* Dark charcoal grey #3f3f46 */
+  --text-muted: 113 113 122;        /* Medium grey #71717a */
+
+  --accent-amber: 217 119 6;        /* High-contrast warm ochre/amber #d97706 */
+  --accent-emerald: 5 150 105;      /* Deep rich emerald #059669 */
+  --accent-blue: 2 132 199;         /* Rich ocean blue #0284c7 */
+  --accent-purple: 147 51 234;      /* Deep rich purple #9333ea */
+
+  --grid-line: rgba(0, 0, 0, 0.05);
+  --banner-grad-start: #f4f4f5;
+  --banner-grad-mid: #e4e4e7;
+  --banner-grad-end: #d4d4d8;
+
+  --modal-backdrop: rgba(0, 0, 0, 0.45);
+  --selection-bg: rgba(217, 119, 6, 0.2);
+  --selection-text: #78350f;
+  --scrollbar-bg: #ffffff;
+  --scrollbar-thumb: #d4d4d8;
+  --scrollbar-hover: #a1a1aa;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--text-primary));
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Custom selection highlight */
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+/* Direct Theme-aware Utilities */
+.bg-dark-bg {
+  background-color: rgb(var(--bg));
+}
+.bg-dark-surface {
+  background-color: rgb(var(--surface));
+}
+.bg-dark-subtle {
+  background-color: rgb(var(--surface-secondary));
+}
+.border-dark-border {
+  border-color: rgb(var(--border));
+}
+.border-dark-borderLight {
+  border-color: rgb(var(--border-light));
+}
+.text-dark-text {
+  color: rgb(var(--text-primary));
+}
+.text-dark-muted {
+  color: rgb(var(--text-secondary));
+}
+.text-dark-faint {
+  color: rgb(var(--text-muted));
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-hover);
+}
+
+/* Editorial Grid Background */
+.bg-editorial-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+/* Subtle Technical Card */
+.tech-card {
+  background-color: rgb(var(--surface));
+  border: 1px solid rgb(var(--border));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tech-card:hover {
+  border-color: rgb(var(--border-light));
+  background-color: rgb(var(--surface-hover));
+}
+
+/* Technical Hairline Border */
+.border-hairline {
+  border-color: rgb(var(--border));
+}
+
+/* Monospace label tag */
+.mono-label {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  letter-spacing: -0.02em;
+}
+
+/* Print Styles for Resume Modal */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+}

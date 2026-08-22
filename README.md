@@ -1,6 +1,6 @@
 # Anusha Singh
 
-**AI/ML Student · Software Developer**
+**AI/ML Engineer · Developer**
 
 B.Tech CSE student specializing in AI/ML, interested in building practical software and intelligent systems.
 

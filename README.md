@@ -8,7 +8,7 @@ Currently learning, building, and contributing to open source.
 
 [Portfolio](https://ianusha08.github.io/portfolio) · [LinkedIn](https://www.linkedin.com/in/anushasingh18/) · [X](https://x.com/imanusha09)
 
-> *building quietly, learning endlessly ✦*
+> *building quietly, learning endlessly on coffee ☕*
 
 ---
 

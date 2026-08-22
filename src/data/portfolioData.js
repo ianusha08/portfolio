@@ -1,9 +1,9 @@
 export const personalInfo = {
   name: "Anusha Singh",
-  title: "B.Tech CSE • AI/ML",
+  title: "AI/ML Engineer in Training · Developer",
   institution: "IILM University",
-  headline: "AI/ML Engineer in training focused on building practical systems at the intersection of Artificial Intelligence and software engineering.",
-  subheadline: "Spanning Voice AI, Generative AI, Computer Vision, and Full-Stack Development with a focus on real-time conversational systems.",
+  headline: "Building practical AI-powered systems.",
+  subheadline: "Focused on Generative AI, AI Agents, Computer Vision, Voice AI, and full-stack engineering, with an emphasis on real-time and intelligent applications.",
   status: "Available for Summer 2026 Engineering Internships",
   location: "India",
   github: "https://github.com/ianusha08",
@@ -110,29 +110,18 @@ export const projectsData = [
 
 export const experienceData = [
   {
-    period: "2025",
-    role: "Python Development Intern",
-    organization: "QSkill",
+    period: "Apr 2026 – Jul 2026",
+    role: "Full Stack Developer Intern",
+    organization: "Diverse Loopers Private Limited",
     type: "Internship",
-    description: "Developed and optimized Python backend scripts, automated data processing tasks, and built modular utilities.",
+    description: "Contributed to the development and improvement of production-oriented web applications, working across frontend interfaces, dashboard systems, application features, and backend-integrated workflows.",
     achievements: [
-      "Constructed modular Python scripts to parse, clean, and structure raw dataset feeds.",
-      "Collaborated on backend API endpoints and wrote unit tests for core validation logic."
+      "Built and enhanced responsive dashboards and user interfaces while maintaining consistency across different application modules.",
+      "Implemented and refined application features, resolved UI and functional issues, and collaborated with the development team to deliver production-ready solutions."
     ]
   },
   {
-    period: "2024 — 2025",
-    role: "Voice AI Challenge / Project Developer",
-    organization: "Voice for Bharat",
-    type: "Project / AI Challenge",
-    description: "Participated in developing voice AI workflows focused on Indian language accessibility, voice prompts, and real-time audio interaction.",
-    achievements: [
-      "Prototyped speech recognition and conversational response workflows for multilingual contexts.",
-      "Experimented with prompt engineering to reduce latency and improve intent detection."
-    ]
-  },
-  {
-    period: "2024",
+    period: "2026",
     role: "Open Source Contributor",
     organization: "GirlScript Summer of Code (GSSoC)",
     type: "Open Source",
@@ -143,14 +132,14 @@ export const experienceData = [
     ]
   },
   {
-    period: "2023 — 2027",
-    role: "B.Tech in Computer Science and Engineering (AI/ML)",
-    organization: "IILM University",
-    type: "Education",
-    description: "Undergraduate student specializing in Artificial Intelligence & Machine Learning. Building strong foundations in algorithms, mathematical foundations, and software development.",
+    period: "Aug 2026",
+    role: "Voice AI Challenge / Project Developer",
+    organization: "Voice for Bharat",
+    type: "Project / AI Challenge",
+    description: "Participated in developing voice AI workflows focused on Indian language accessibility, voice prompts, and real-time audio interaction.",
     achievements: [
-      "Coursework: Data Structures & Algorithms, Machine Learning, Deep Learning, Linear Algebra, DBMS, Operating Systems.",
-      "Active participant in technical hackathons and competitive programming."
+      "Prototyped speech recognition and conversational response workflows for multilingual contexts.",
+      "Experimented with prompt engineering to reduce latency and improve intent detection."
     ]
   }
 ];
@@ -169,7 +158,7 @@ export const openSourceData = [
   {
     organization: "GirlScript Summer of Code (GSSoC)",
     role: "Open Source Contributor",
-    year: "2024",
+    year: "2026",
     description: "Contributed features, accessibility improvements, and bug fixes across community web projects during the summer program.",
     tags: ["React", "JavaScript", "Git", "Community"]
   },

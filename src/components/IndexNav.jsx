@@ -89,10 +89,10 @@ export const IndexNav = () => {
 
         <div className="pt-6 border-t border-dark-border">
           <div className="text-[10px] font-mono text-dark-faint leading-relaxed">
-            <div>STATUS: LEARNING & SHIPPING</div>
+            <div>STATUS: OPEN TO INTERNSHIPS</div>
             <div className="text-emerald-600 dark:text-emerald-400 mt-1 flex items-center gap-1.5 font-medium">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span>
-              <span>Available '26 Intern</span>
+              <span>AI/ML · GenAI · Software Engineering</span>
             </div>
           </div>
         </div>

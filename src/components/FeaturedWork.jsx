@@ -6,6 +6,18 @@ import { ArrowUpRight, Github, ExternalLink, Code2, Terminal, Layers, Mic, Eye, 
 
 export const FeaturedWork = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [activeCategory, setActiveCategory] = useState('All');
+
+  const categories = ['All', 'Voice AI', 'Generative AI', 'Computer Vision', 'Full Stack'];
+
+  const filteredProjects = projectsData.filter((project) => {
+    if (activeCategory === 'All') return true;
+    if (activeCategory === 'Voice AI') return project.category.toLowerCase().includes('voice');
+    if (activeCategory === 'Generative AI') return project.category.toLowerCase().includes('generative');
+    if (activeCategory === 'Computer Vision') return project.category.toLowerCase().includes('computer vision');
+    if (activeCategory === 'Full Stack') return project.category.toLowerCase().includes('full stack');
+    return true;
+  });
 
   const getProjectIcon = (id) => {
     switch (id) {
@@ -29,20 +41,34 @@ export const FeaturedWork = () => {
   return (
     <section id="projects" className="py-12 border-t border-dark-border">
       {/* Monospace Section Header */}
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
         <div className="flex items-center gap-2 text-xs font-mono text-dark-faint uppercase">
           <span className="text-accent-amber font-semibold">03 //</span>
           <span className="text-dark-muted font-medium">PROJECTS & CASE STUDIES</span>
         </div>
-        <span className="text-[11px] font-mono text-dark-faint">
-          selected engineering
-        </span>
+
+        {/* Category Filter Pills */}
+        <div className="flex flex-wrap items-center gap-1.5 font-mono text-xs">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`px-2.5 py-1 rounded-md text-[11px] font-medium transition-all border ${
+                activeCategory === cat
+                  ? 'bg-accent-amber/15 border-accent-amber/40 text-accent-amber'
+                  : 'bg-dark-subtle border-dark-border text-dark-muted hover:text-dark-text hover:border-dark-borderLight'
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {projectsData.map((project, index) => {
-          const isFeatured = project.featured;
+        {filteredProjects.map((project) => {
+          const isFeatured = project.featured && activeCategory === 'All';
 
           return (
             <div

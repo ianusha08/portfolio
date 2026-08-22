@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { personalInfo } from '../data/portfolioData';
-import { Mail, Github, Linkedin, Twitter, Copy, Check, Send, Sparkles, Loader2, AlertCircle, CheckCircle2, RefreshCw } from 'lucide-react';
-import confetti from 'canvas-confetti';
+import { Mail, Github, Linkedin, Twitter, Copy, Check, Send, Loader2, AlertCircle, CheckCircle2, RefreshCw } from 'lucide-react';
 import { validateContactForm, sendContactNote } from '../services/contactService';
 
 export const Contact = () => {
@@ -46,19 +45,6 @@ export const Contact = () => {
 
     try {
       await sendContactNote(formData);
-
-      // Trigger celebratory confetti on success
-      try {
-        confetti({
-          particleCount: 45,
-          spread: 65,
-          origin: { y: 0.75 },
-          colors: ['#f59e0b', '#10b981', '#38bdf8']
-        });
-      } catch (err) {
-        // Non-blocking confetti fallback
-      }
-
       setFormStatus('success');
       setFormData({ name: '', email: '', message: '' });
       setFormErrors({});
@@ -240,7 +226,6 @@ export const Contact = () => {
                   type="text"
                   required
                   disabled={isSubmitting}
-                  placeholder="Recruiter / Engineer"
                   value={formData.name}
                   onChange={(e) => handleInputChange('name', e.target.value)}
                   className={`w-full px-3 py-2 rounded-lg border text-xs outline-none bg-dark-subtle text-dark-text font-mono transition-colors disabled:opacity-60 ${
@@ -261,7 +246,6 @@ export const Contact = () => {
                   type="email"
                   required
                   disabled={isSubmitting}
-                  placeholder="name@company.com"
                   value={formData.email}
                   onChange={(e) => handleInputChange('email', e.target.value)}
                   className={`w-full px-3 py-2 rounded-lg border text-xs outline-none bg-dark-subtle text-dark-text font-mono transition-colors disabled:opacity-60 ${
@@ -282,7 +266,6 @@ export const Contact = () => {
                   required
                   rows={3}
                   disabled={isSubmitting}
-                  placeholder="Discuss an internship role, project idea, or technical question..."
                   value={formData.message}
                   onChange={(e) => handleInputChange('message', e.target.value)}
                   className={`w-full px-3 py-2 rounded-lg border text-xs outline-none bg-dark-subtle text-dark-text font-mono resize-none transition-colors disabled:opacity-60 ${

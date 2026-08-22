@@ -16,11 +16,24 @@ export function validateContactForm({ name, email, message }) {
     errors.name = 'Name must be at least 2 characters.';
   }
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  // Strict email validation: format, valid TLD, no consecutive dots
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,24}$/;
+
+  // Common fake / dummy placeholder domains
+  const blockedDomains = [
+    'test.com', 'test.co', 'example.com', 'example.org', 'domain.com',
+    'asdf.com', 'foo.com', 'bar.com', 'tempmail.com', 'mailinator.com', 'dispostable.com',
+    'trashmail.com', '123.com', 'abc.com', 'xyz.com', 'fake.com', 'none.com', 'invalid.com'
+  ];
+
+  const domain = trimmedEmail.split('@')[1]?.toLowerCase() || '';
+
   if (!trimmedEmail) {
     errors.email = 'Please enter your email address.';
-  } else if (!emailRegex.test(trimmedEmail)) {
-    errors.email = 'Please enter a valid email address.';
+  } else if (!emailRegex.test(trimmedEmail) || trimmedEmail.includes('..')) {
+    errors.email = 'Please enter a valid email address (e.g. name@gmail.com).';
+  } else if (blockedDomains.includes(domain)) {
+    errors.email = 'Please provide a valid, active email address so we can reply.';
   }
 
   if (!trimmedMessage) {
@@ -102,7 +115,7 @@ export async function sendContactNote({ name, email, message }) {
       name: name.trim(),
       email: email.trim(),
       message: message.trim(),
-      _subject: `[Portfolio Quick Note] from ${name.trim()} (${email.trim()})`,
+      _subject: `[Portfolio Note] from ${name.trim()} (${email.trim()})`,
       _template: 'table',
       _captcha: 'false',
     }),

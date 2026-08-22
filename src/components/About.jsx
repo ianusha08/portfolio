@@ -14,13 +14,16 @@ export const About = () => {
 
       <div className="space-y-4 text-sm leading-relaxed mb-8 font-sans">
         <p className="text-base sm:text-lg text-dark-text font-medium leading-relaxed">
-          AI/ML Engineer in training focused on building practical systems at the intersection of Artificial Intelligence and software engineering.
+          I build AI-powered applications that move beyond prototypes into usable software.
         </p>
         <p className="text-dark-muted leading-relaxed">
-          My work spans Voice AI, Generative AI, Computer Vision, and Full-Stack Development, with a particular interest in real-time conversational systems and AI-powered applications. Beyond building projects, I actively explore emerging AI technologies, contribute to open-source initiatives, and participate in technical communities.
+          My work spans Generative AI, AI Agents, Computer Vision, Voice AI, and full-stack development, with a focus on real-time and intelligent systems.
         </p>
         <p className="text-dark-muted leading-relaxed">
-          My broader interests include Applied AI, Machine Learning, AI Agents, Developer Tooling, and scalable software architectures.
+          Currently strengthening my foundations in Machine Learning, DSA, and software engineering while building practical projects and contributing to open source.
+        </p>
+        <p className="text-dark-muted leading-relaxed">
+          <span className="font-medium text-dark-text">Current goal:</span> AI/ML, GenAI, or software engineering internships where I can contribute to production-oriented systems and grow through real-world engineering.
         </p>
       </div>
 

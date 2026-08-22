@@ -112,27 +112,3 @@ My goal is to create software that is:
 
 ---
 
-## 📈 GitHub
-
-I use GitHub to document my development journey, contribute to open source, experiment with ideas, and build projects in public.
-
-**GitHub:** [@ianusha08](https://github.com/ianusha08)
-
----
-
-## 📬 Connect
-
-* **Email:** [ianushaa09@gmail.com](mailto:ianushaa09@gmail.com)
-* **GitHub:** [@ianusha08](https://github.com/ianusha08)
-* **LinkedIn:** [anushasingh18](https://www.linkedin.com/in/anushasingh18/)
-* **X:** [@imanusha09](https://x.com/imanusha09)
-
----
-
-<p align="center">
-
-Built with ☕ and curiosity.
-
-**Anusha Singh © 2026**
-
-</p>

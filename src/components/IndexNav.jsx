@@ -92,7 +92,7 @@ export const IndexNav = () => {
             <div>STATUS: OPEN TO INTERNSHIPS</div>
             <div className="text-emerald-600 dark:text-emerald-400 mt-1 flex items-center gap-1.5 font-medium">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span>
-              <span>AI/ML · GenAI · Software Engineering</span>
+              <span>AI/ML · Machine Learning · Software Development</span>
             </div>
           </div>
         </div>

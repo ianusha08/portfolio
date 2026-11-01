@@ -14,16 +14,19 @@ export const About = () => {
 
       <div className="space-y-4 text-sm leading-relaxed mb-8 font-sans">
         <p className="text-base sm:text-lg text-dark-text font-medium leading-relaxed">
-          I build AI-powered applications that move beyond prototypes into usable software.
+          I build software applications that bring AI into practical use.
         </p>
         <p className="text-dark-muted leading-relaxed">
-          My work spans Generative AI, AI Agents, Computer Vision, Voice AI, and full-stack development, with a focus on real-time and intelligent systems.
+          My work explores machine learning, computer vision, and voice-based AI, with an interest in turning technical ideas into useful, real-world applications.
         </p>
         <p className="text-dark-muted leading-relaxed">
-          Currently strengthening my foundations in Machine Learning, DSA, and software engineering while building practical projects and contributing to open source.
+          Through projects like real-time intrusion detection, a voice-first learning companion, and a wellness platform, I've been exploring how AI can be applied to different problems.
         </p>
         <p className="text-dark-muted leading-relaxed">
-          <span className="font-medium text-dark-text">Current goal:</span> AI/ML, GenAI, or software engineering internships where I can contribute to production-oriented systems and grow through real-world engineering.
+          I'm continuously strengthening my foundations in machine learning, data structures and algorithms, and software engineering while learning to build more reliable and scalable applications.
+        </p>
+        <p className="text-dark-muted leading-relaxed">
+          <span className="font-medium text-dark-text">Current goal:</span> Seeking AI/ML and software engineering internship opportunities where I can contribute to practical projects, learn from experienced engineers, and grow through hands-on development.
         </p>
       </div>
 
@@ -58,11 +61,11 @@ export const About = () => {
       <div className="mt-4 p-3.5 rounded-xl border border-dark-border bg-dark-surface flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-dark-muted">
         <div className="flex items-center gap-2">
           <span className="text-accent-amber">FOCUS:</span>
-          <span className="text-dark-text">Full-Stack • AI/ML</span>
+          <span className="text-dark-text">AI/ML • Software Development</span>
         </div>
         <div className="flex items-center gap-2">
           <span className="text-accent-blue">MINDSET:</span>
-          <span>Clean Code • Math Rigor • Curiosity • Coffee</span>
+          <span>Problem Solving • Clean Code • Curiosity • Coffee</span>
         </div>
       </div>
     </section>

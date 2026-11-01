@@ -22,13 +22,13 @@ export const OpenSource = () => {
             key={index}
             className="tech-card p-5 rounded-xl border border-dark-border hover:border-dark-borderLight transition-all"
           >
-            <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-2">
+            <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-3">
               <div className="flex items-center gap-2.5">
                 <div className="p-1.5 rounded bg-dark-subtle border border-dark-border text-accent-emerald">
                   <GitPullRequest className="w-3.5 h-3.5" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-dark-text">
+                  <h3 className="text-sm font-bold text-dark-text mb-0.5">
                     {item.organization}
                   </h3>
                   <div className="text-xs font-mono text-dark-muted">
@@ -42,11 +42,11 @@ export const OpenSource = () => {
               </span>
             </div>
 
-            <p className="text-xs text-dark-muted leading-relaxed mb-3">
+            <p className="text-xs text-dark-muted leading-[1.75] mb-3.5">
               {item.description}
             </p>
 
-            <div className="flex flex-wrap gap-1.5 pt-2 border-t border-dark-border">
+            <div className="flex flex-wrap gap-1.5 pt-2.5 border-t border-dark-border">
               {item.tags.map((tag) => (
                 <span
                   key={tag}

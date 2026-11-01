@@ -1,28 +1,28 @@
 export const personalInfo = {
   name: "Anusha Singh",
-  title: "AI/ML Engineer in Training · Developer",
+  title: "AI/ML Engineer · Software Developer",
   institution: "IILM University",
-  headline: "Building practical AI-powered systems.",
-  subheadline: "Focused on Generative AI, AI Agents, Computer Vision, Voice AI, and full-stack engineering, with an emphasis on real-time and intelligent applications.",
+  headline: "Building intelligent applications with machine learning.",
+  subheadline: "Exploring machine learning, computer vision, and voice-based AI while building practical software applications that solve real-world problems.",
   status: "Available for Summer 2026 Engineering Internships",
   location: "India",
   github: "https://github.com/ianusha08",
   linkedin: "https://www.linkedin.com/in/anushasingh18/",
-  email: "ianushaa09@gmail.com",
+  email: "i.anushaa09@gmail.com",
   twitter: "https://x.com/imanusha09",
   resumeUrl: "#resume-modal",
   aboutPhilosophy: [
     {
-      title: "Building by Shipping",
-      description: "Learning the deepest principles of AI/ML and software engineering by actually architecting and shipping working projects."
+      title: "Building Through Projects",
+      description: "Learning by designing, developing, and improving practical AI/ML and software applications, turning concepts into working projects."
     },
     {
       title: "Mathematical Foundations",
-      description: "Grounding machine learning and data science work in core linear algebra, probability, and algorithmic problem solving."
+      description: "Strengthening the mathematical foundations behind machine learning and data science through linear algebra, probability, statistics, and problem-solving."
     },
     {
       title: "Open Source Collaboration",
-      description: "Contributing to developer communities, valuing clear documentation, and building transparent software."
+      description: "Exploring open-source development, contributing to community-driven projects, and learning through collaboration, documentation, and shared knowledge."
     }
   ]
 };
@@ -31,73 +31,71 @@ export const projectsData = [
   {
     id: "saksham",
     title: "Saksham",
-    category: "Voice AI & Real-time Systems",
-    tagline: "Ultra-low latency conversational AI voice agent with real-time audio streaming",
-    problem: "Conventional voice pipelines introduce noticeable latency between speech recognition, LLM reasoning, and speech synthesis, resulting in unnatural pauses and fragmented conversations.",
-    solution: "Built an end-to-end real-time voice pipeline using LiveKit WebRTC for bidirectional audio, Murf for speech synthesis, and LLMs for conversational reasoning.",
-    technologies: ["Python", "LiveKit", "Murf AI", "FastAPI", "WebSockets", "AsyncIO", "LLMs"],
+    category: "VOICE AI & REAL-TIME SYSTEMS",
+    tagline: "A real-time, voice-first learning companion built for natural and interactive conversations.",
+    problem: "Traditional voice interfaces can introduce latency and lack contextual continuity, limiting natural and engaging interactions.",
+    solution: "Built a real-time voice pipeline using LiveKit Agents, Deepgram speech-to-text, and Murf Falcon text-to-speech, with conversational memory and interactive learning capabilities.",
+    technologies: ["Next.js", "React", "TypeScript", "Python", "LiveKit", "Deepgram", "Murf Falcon"],
     impact: "Achieved sub-second conversational turnaround with responsive audio streaming and voice activity detection.",
     role: "Developer",
-    github: "https://github.com/ianusha08/murf-livekit-starter",
+    github: "https://github.com/ianusha08/saksham",
     liveDemo: "",
     featured: true,
     highlights: [
-      "Built bidirectional low-latency audio streaming over LiveKit WebRTC.",
-      "Integrated Murf TTS for real-time, expressive speech generation.",
-      "Implemented asynchronous interruption handling for natural mid-response turn-taking."
+      "Built a real-time voice-based learning companion using LiveKit Agents, Deepgram speech-to-text, and Murf Falcon text-to-speech.",
+      "Implemented conversational memory and interactive learning tools for contextual voice interactions.",
+      "Integrated outbound calling, call analytics, human escalation, and specialist-agent handoffs."
     ]
   },
   {
     id: "nuurai",
     title: "NUURAI",
-    category: "Generative AI • Intelligent Systems",
-    tagline: "AI-powered assistant designed for contextual conversations, personalized interactions, and intelligent assistance.",
-    problem: "Most AI assistants treat each interaction as an isolated prompt, limiting continuity, personalization, and useful context across conversations.",
-    solution: "Built NUURAI as a context-aware AI platform combining conversational AI, persistent memory, streaming responses, and a responsive interface into a unified experience.",
-    technologies: ["React", "TypeScript", "Node.js", "Python", "OpenAI", "Gemini", "Tailwind CSS"],
+    category: "GENERATIVE AI · WELLNESS TECHNOLOGY",
+    tagline: "A wellness and self-reflection platform featuring mood tracking, journaling, and personalized insights.",
+    problem: "Users often lack a structured way to track their emotional wellbeing and reflect on patterns in their daily experiences.",
+    solution: "Developed a React-based platform with daily wellness check-ins, personal journaling, mood tracking, and an interactive dashboard. Prototyped a conversational AI companion for guided reflection.",
+    technologies: ["React", "JavaScript", "CSS", "Vite"],
     impact: "Delivered an intuitive digital assistant interface with real-time markdown rendering and prompt caching.",
     role: "Full-Stack AI Developer",
     github: "https://github.com/ianusha08/nuurai",
     liveDemo: "",
     featured: true,
     highlights: [
-      "Implemented streaming LLM responses for responsive real-time interaction.",
-      "Built persistent conversation state to maintain context across sessions.",
-      "Integrated multiple AI models and APIs through a unified application layer.",
-      "Designed a focused interface around conversational interaction and usability."
+      "Created a React-based wellness platform featuring daily check-ins, personal journaling, and mood, energy, stress, and sleep tracking.",
+      "Developed an interactive dashboard with wellness visualizations and weekly insights.",
+      "Prototyped a conversational AI companion for guided reflection."
     ]
   },
   {
     id: "restricted-area-intrusion-detection",
-    title: "Restricted Area Intrusion Detection",
-    category: "Computer Vision • Real-Time Detection",
-    tagline: "Real-time computer vision system for detecting unauthorized entry into defined restricted zones.",
-    problem: "Manual monitoring of restricted areas is unreliable at scale, making automated detection and immediate visual alerts essential for real-time surveillance.",
-    solution: "Built a computer vision pipeline that processes video frames, detects subjects within monitored scenes, and evaluates their position against predefined restricted regions to identify potential intrusions.",
-    technologies: ["Python", "OpenCV", "Computer Vision", "NumPy", "Machine Learning"],
+    title: "Area-Restricted Intrusion Detection System",
+    category: "COMPUTER VISION · REAL-TIME DETECTION",
+    tagline: "A real-time computer vision system that detects unauthorized entry into predefined restricted zones.",
+    problem: "Manual monitoring of restricted areas is unreliable and makes immediate intrusion detection difficult.",
+    solution: "Implemented MediaPipe pose detection and polygon-based zone monitoring using OpenCV. Added a 3-second verification threshold to distinguish genuine intrusions from passersby, with Twilio SMS alerts and event logging.",
+    technologies: ["Python", "OpenCV", "MediaPipe", "NumPy", "Twilio"],
     impact: "Automated real-time visual alerts and zone monitoring across video feeds.",
     role: "AI/ML Developer",
     github: "https://github.com/ianusha08/restricted-area-intrusion-detection",
     liveDemo: "",
     featured: true,
     highlights: [
-      "Processed video streams frame-by-frame using OpenCV.",
-      "Defined restricted regions using region-of-interest geometry.",
-      "Evaluated detected subjects against zone boundaries to identify intrusions.",
-      "Generated real-time visual feedback when unauthorized entry was detected."
+      "Built a real-time surveillance system using Python, OpenCV, and MediaPipe pose estimation to detect unauthorized entry into restricted zones.",
+      "Implemented polygon-based zone detection with a three-second verification threshold to reduce false alerts.",
+      "Integrated Twilio SMS notifications and event logging, with a cooldown mechanism to prevent repeated alerts."
     ]
   },
   {
     id: "ets-platform",
     title: "ETS Platform",
-    category: "Full Stack & Systems",
-    tagline: "Enterprise tracking and dispatch scheduling management platform",
-    problem: "Logistics coordinators face data fragmentation and manual overhead when scheduling dispatches and tracking fleet milestones in real time.",
-    solution: "Architected a full-stack tracking dashboard with live status updates, structured scheduling queues, and role-based access management.",
+    category: "FULL STACK & SYSTEMS",
+    tagline: "A full-stack enterprise platform for tracking operations and managing dispatch schedules.",
+    problem: "Logistics operations involve fragmented information and manual coordination, making dispatch scheduling and real-time tracking difficult to manage.",
+    solution: "Contributed to frontend interfaces, dashboards, backend workflows, API integration, and dispatch scheduling to support a unified operations management platform.",
     technologies: ["React", "JavaScript", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     impact: "Centralized fleet operational workflows into a unified, responsive dashboard.",
     role: "Full Stack Engineer",
-    github: "https://github.com/ianusha08/ets-platform",
+    github: "https://github.com/Diverse-Loopers/Ets",
     liveDemo: "",
     featured: true,
     highlights: [
@@ -114,10 +112,11 @@ export const experienceData = [
     role: "Full Stack Developer Intern",
     organization: "Diverse Loopers Private Limited",
     type: "Internship",
-    description: "Contributed to the development and improvement of production-oriented web applications, working across frontend interfaces, dashboard systems, application features, and backend-integrated workflows.",
+    description: "Developed production-oriented web applications, focusing on responsive dashboards, frontend interfaces, application features, and backend-integrated workflows.",
     achievements: [
-      "Built and enhanced responsive dashboards and user interfaces while maintaining consistency across different application modules.",
-      "Implemented and refined application features, resolved UI and functional issues, and collaborated with the development team to deliver production-ready solutions."
+      "Built and optimized responsive dashboards and user interfaces with React, ensuring consistency across application modules.",
+      "Developed modular frontend components, implemented application features, and resolved UI and functional issues.",
+      "Integrated RESTful API endpoints and connected frontend views with backend services to support unified operational workflows."
     ]
   },
   {
@@ -125,10 +124,10 @@ export const experienceData = [
     role: "Open Source Contributor",
     organization: "GirlScript Summer of Code (GSSoC)",
     type: "Open Source",
-    description: "Actively contributed to open-source repositories under the GSSoC program, focusing on frontend improvements, bug fixes, and documentation.",
+    description: "Contributed to community open-source repositories, focusing on UI improvements, bug fixes, and documentation.",
     achievements: [
-      "Submitted merged pull requests for UI component enhancements and responsive fixes.",
-      "Collaborated with project maintainers and participated in community code reviews."
+      "Collaborated with project maintainers and submitted merged pull requests for UI enhancements and accessibility fixes.",
+      "Participated in community code reviews, issue discussions, and technical documentation updates."
     ]
   },
   {
@@ -136,10 +135,10 @@ export const experienceData = [
     role: "Voice AI Challenge / Project Developer",
     organization: "Voice for Bharat",
     type: "Project / AI Challenge",
-    description: "Participated in developing voice AI workflows focused on Indian language accessibility, voice prompts, and real-time audio interaction.",
+    description: "Developed voice-based AI workflows focused on speech recognition, conversational responses, and real-time audio interaction.",
     achievements: [
-      "Prototyped speech recognition and conversational response workflows for multilingual contexts.",
-      "Experimented with prompt engineering to reduce latency and improve intent detection."
+      "Prototyped speech recognition and conversational response workflows for real-time audio interactions.",
+      "Applied prompt engineering techniques and latency reduction strategies to improve conversational turnaround."
     ]
   }
 ];
@@ -147,10 +146,17 @@ export const experienceData = [
 export const achievementsData = [
   {
     title: "ICPC Algo Queen 2023",
-    rank: "14th Rank Nationwide",
+    rank: "All India Rank 14",
     period: "2023",
     tags: ["Competitive Programming", "Algorithms", "Problem Solving"],
-    description: "Secured 14th rank nationally in ICPC Algo Queen 2023, a competitive programming challenge focused on algorithmic problem-solving. The experience strengthened my ability to approach complex problems systematically and work under competitive constraints."
+    description: "Secured All India Rank 14 in ICPC Algo Queen 2023, a competitive programming challenge focused on algorithmic problem-solving. The experience strengthened my ability to approach complex problems systematically and work under competitive constraints."
+  },
+  {
+    title: "GirlScript Summer of Code 2026",
+    rank: "Open-Source Contributor",
+    period: "2026",
+    tags: ["Open Source", "React", "Community"],
+    description: "Contributed to community open-source repositories through code improvements, accessibility enhancements, and collaborative pull requests."
   }
 ];
 
@@ -163,11 +169,11 @@ export const openSourceData = [
     tags: ["React", "JavaScript", "Git", "Community"]
   },
   {
-    organization: "Developer Community Repositories",
-    role: "Contributor & Maintainer",
-    year: "2024 — Present",
-    description: "Publishing and maintaining personal open-source projects including voice agents, ML classification notebooks, and developer utilities.",
-    tags: ["Python", "AI/ML", "React", "Open Source"]
+    organization: "Independent Development",
+    role: "Personal Projects & Technical Exploration",
+    year: "2025 – Present",
+    description: "Building and experimenting with independent applications across AI/ML, voice-based systems, and software development, with a focus on practical implementation and continuous technical improvement.",
+    tags: ["Python", "AI/ML", "React", "Voice AI"]
   }
 ];
 
@@ -185,8 +191,8 @@ export const toolboxData = [
     skills: ["Django", "Node.js", "Express", "FastAPI", "REST APIs"]
   },
   {
-    category: "AI / ML",
-    skills: ["Machine Learning", "Generative AI", "LLMs", "PyTorch", "Computer Vision", "Scikit-Learn", "OpenCV", "Pandas & NumPy"]
+    category: "AI/ML",
+    skills: ["Machine Learning", "Generative AI", "LLMs", "PyTorch", "Computer Vision", "Scikit-learn", "OpenCV", "Pandas", "NumPy"]
   },
   {
     category: "Tools",

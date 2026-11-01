@@ -63,7 +63,7 @@ export const ResumeModal = ({ isOpen, onClose }) => {
                   {personalInfo.name}
                 </h1>
                 <span className="text-xs font-mono text-accent-amber">
-                  {personalInfo.title} • {personalInfo.institution}
+                  {personalInfo.title}
                 </span>
               </div>
 
@@ -92,7 +92,7 @@ export const ResumeModal = ({ isOpen, onClose }) => {
               <div className="p-3 rounded-lg border border-dark-border bg-dark-subtle text-xs">
                 <div className="flex items-center justify-between font-bold text-dark-text mb-0.5">
                   <span>Bachelor of Technology in Computer Science & Engineering (AI/ML)</span>
-                  <span className="font-mono text-dark-faint">2023 — 2027</span>
+                  <span className="font-mono text-dark-faint">Aug 2024 – May 2028</span>
                 </div>
                 <div className="text-dark-muted mb-1">
                   {personalInfo.institution} • Specialization in Artificial Intelligence & Machine Learning
@@ -139,15 +139,30 @@ export const ResumeModal = ({ isOpen, onClose }) => {
                 <span>Selected Engineering Projects</span>
               </h2>
               <div className="space-y-2.5">
-                {projectsData.slice(0, 4).map((proj) => (
+                {projectsData.filter(p => p.id !== 'ets-platform').slice(0, 3).map((proj) => (
                   <div key={proj.id} className="p-3 rounded-lg border border-dark-border bg-dark-subtle text-xs">
-                    <div className="flex items-center justify-between font-bold text-dark-text mb-0.5">
+                    <div className="flex items-center justify-between font-bold text-dark-text mb-1">
                       <span>{proj.title} <span className="font-mono text-[10px] text-accent-amber font-normal">[{proj.category}]</span></span>
-                      <span className="font-mono text-[10px] text-dark-faint">{proj.role}</span>
+                      {proj.github && (
+                        <a
+                          href={proj.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-mono text-[10px] text-dark-muted hover:text-dark-text flex items-center gap-1 transition-colors"
+                        >
+                          <span>GitHub</span>
+                          <ExternalLink className="w-2.5 h-2.5" />
+                        </a>
+                      )}
                     </div>
-                    <p className="text-dark-muted mb-1">
-                      {proj.solution}
-                    </p>
+                    <ul className="space-y-0.5 mb-1.5">
+                      {proj.highlights?.map((bullet, i) => (
+                        <li key={i} className="text-dark-text text-[11px] flex items-start gap-1.5">
+                          <span className="text-accent-amber">›</span>
+                          <span>{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
                     <div className="text-[10px] font-mono text-dark-faint">
                       Stack: {proj.technologies.join(' • ')}
                     </div>

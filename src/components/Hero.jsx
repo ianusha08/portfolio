@@ -73,8 +73,6 @@ export const Hero = ({ onOpenResume }) => {
                 <div className="text-xs font-mono text-dark-muted flex flex-wrap items-center gap-1.5 mt-0.5">
                   <span className="text-dark-text font-medium">{personalInfo.title}</span>
                   <span className="text-dark-faint">•</span>
-                  <span>{personalInfo.institution}</span>
-                  <span className="text-dark-faint">•</span>
                   <span className="inline-flex items-center gap-1 text-dark-faint">
                     <MapPin className="w-3 h-3" />
                     {personalInfo.location}
